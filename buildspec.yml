@@ -18,7 +18,10 @@ phases:
 
   post_build:
     commands:
-      - echo Build completed successfully
+      - echo Deploying React application to S3 website root...
+      - aws s3 sync dist/ s3://react-cicd-demo-123456/ --delete --region us-east-1 --cache-control "public,max-age=31536000,immutable"
+      - aws s3 cp dist/index.html s3://react-cicd-demo-123456/index.html --region us-east-1 --cache-control "no-cache,no-store,must-revalidate" --content-type "text/html"
+      - echo Build and deployment completed successfully
 
 artifacts:
   base-directory: dist
