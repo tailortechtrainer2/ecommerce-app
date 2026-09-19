@@ -8,7 +8,7 @@ export default function Navbar({ cartCount }) {
       <div className="container">
         <a className="navbar-brand fw-bold fs-3 brand-font text-ink" href="#home">
           <i className="bi bi-bag-check-fill me-2 text-brand"></i>
-          Shop<span className="text-brand">Ease.</span>
+          Shop<span className="text-brand">EASE!.</span>
         </a>
         <button
           className="navbar-toggler"
