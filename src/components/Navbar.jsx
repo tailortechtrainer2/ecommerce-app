@@ -34,6 +34,9 @@ export default function Navbar({ cartCount }) {
               <a className="nav-link" href="#newsletter">New Arrivals</a>
             </li>
             <li className="nav-item">
+              <a className="nav-link" href="#newsletter">About</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" href="#newsletter">Contact</a>
             </li>
           </ul>
